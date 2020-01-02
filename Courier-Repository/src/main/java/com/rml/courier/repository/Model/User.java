@@ -1,8 +1,12 @@
 package com.rml.courier.repository.Model;
 
 import com.mongodb.lang.NonNull;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.data.mongodb.core.index.Indexed;
 
+@Getter
+@Setter
 public class User {
 //    @Indexed(unique = true, name = "username.index", background = true)
     @NonNull
