@@ -1,4 +1,4 @@
-package com.rml.courier.repository;
+package com.rml.courier.repository.Model;
 
 import com.mongodb.lang.NonNull;
 import org.springframework.data.mongodb.core.index.Indexed;

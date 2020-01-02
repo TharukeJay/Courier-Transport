@@ -1,4 +1,4 @@
-package com.rml.courier.repository;
+package com.rml.courier.repository.Model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.ToString;
