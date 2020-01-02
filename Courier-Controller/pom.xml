@@ -117,12 +117,12 @@
             <artifactId>spring-security-oauth2-client</artifactId>
             <version>5.1.5.RELEASE</version>
         </dependency>
-        <dependency>
-            <groupId>com.hsl.wpdev.sunshine.auth</groupId>
-            <artifactId>sunshine-auth</artifactId>
-            <version>SG-V1.0.3-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.hsl.wpdev.sunshine.auth</groupId>-->
+<!--            <artifactId>sunshine-auth</artifactId>-->
+<!--            <version>SG-V1.0.3-SNAPSHOT</version>-->
+<!--            <scope>compile</scope>-->
+<!--        </dependency>-->
     </dependencies>
 
     <build>
@@ -191,7 +191,7 @@
                                 <daemon>
                                     <id>courier-api</id>
                                     <wrapperMainClass>org.tanukisoftware.wrapper.WrapperSimpleApp</wrapperMainClass>
-                                    <mainClass>com.hsl.wpdev.sunshine.controller.SunshineApiServer</mainClass>
+                                    <mainClass>com.hsl.wpdev.sunshine.com.rml.courier.controller.controller.SunshineApiServer</mainClass>
                                     <commandLineArguments>
                                         <commandLineArgument>start</commandLineArgument>
                                     </commandLineArguments>
