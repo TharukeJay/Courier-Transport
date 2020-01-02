@@ -1,6 +1,6 @@
 package com.rml.courier.service.Impl;
 
-import com.rml.courier.repository.Model.User;
+import com.rml.courier.repository.model.User;
 import com.rml.courier.repository.UserRepository;
 import com.rml.courier.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

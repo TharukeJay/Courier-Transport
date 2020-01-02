@@ -8,7 +8,7 @@ import org.springframework.data.mongodb.core.index.Indexed;
 
 @Getter
 @Setter
-public class User extends PersistObject{
+public class User extends PersistObject {
 //    @Indexed(unique = true, name = "username.index", background = true)
     @NonNull
     private String username;
