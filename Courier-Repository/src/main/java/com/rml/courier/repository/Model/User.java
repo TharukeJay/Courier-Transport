@@ -1,13 +1,14 @@
-package com.rml.courier.repository.Model;
+package com.rml.courier.repository.model;
 
 import com.mongodb.lang.NonNull;
 import lombok.Getter;
 import lombok.Setter;
+import com.rml.courier.repository.Model.PersistObject;
 import org.springframework.data.mongodb.core.index.Indexed;
 
 @Getter
 @Setter
-public class User {
+public class User extends PersistObject{
 //    @Indexed(unique = true, name = "username.index", background = true)
     @NonNull
     private String username;

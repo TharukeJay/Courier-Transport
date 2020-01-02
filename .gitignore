@@ -1,6 +1,8 @@
 # remove idea files
 .idea
 
+.mvn/*
+
 *.iml
 
 /logs/
