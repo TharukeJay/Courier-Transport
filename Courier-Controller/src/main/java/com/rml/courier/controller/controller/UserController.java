@@ -1,7 +1,7 @@
 package com.rml.courier.controller.controller;
 
 import com.rml.courier.service.UserService;
-import com.rml.courier.repository.Model.User;
+import com.rml.courier.repository.model.User;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

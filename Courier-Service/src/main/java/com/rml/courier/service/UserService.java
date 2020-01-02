@@ -1,6 +1,6 @@
 package com.rml.courier.service;
 
-import com.rml.courier.repository.Model.User;
+import com.rml.courier.repository.model.User;
 
 public interface UserService {
 
