@@ -3,8 +3,7 @@ package com.rml.courier.repository.model;
 import com.mongodb.lang.NonNull;
 import lombok.Getter;
 import lombok.Setter;
-import com.rml.courier.repository.Model.PersistObject;
-import org.springframework.data.mongodb.core.index.Indexed;
+import com.rml.courier.repository.PersistObject.PersistObject;
 
 @Getter
 @Setter
