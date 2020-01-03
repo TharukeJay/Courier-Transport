@@ -19,7 +19,7 @@ public class User extends PersistObject {
     private String firstName;
     private String lastName;
     private String password;
-    private String organization;
+//    private String organization;
     private UserRole userRole;
     private UserStatus userStatus;
 

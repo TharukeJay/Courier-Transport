@@ -266,6 +266,7 @@
 		<module>Courier-Controller</module>
 		<module>Courier-Service</module>
 		<module>Courier-Repository</module>
-	</modules>
+        <module>Courier-auth</module>
+    </modules>
 
 </project>
