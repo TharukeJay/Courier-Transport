@@ -33,4 +33,28 @@ public class UserServiceImpl implements UserService {
             return savedUser;
         }
     }
+
+    @Override
+    public Boolean checkUserByEmail(String email) {
+        log.info("[User Service] ==> User checking user availability for email [{}]", email);
+        if (userRepository.existsByEmail(email)) {
+            log.info("[User Service] ==> User available for email [{}]", email);
+            return true;
+        } else {
+            log.info("[User Service] ==> User not available for email [{}]", email);
+            return false;
+        }
+    }
+
+    @Override
+    public boolean validateUniqueUser(String userName) {
+        log.info("[User Service] ==> Requesting username validation for name [{}]", userName);
+        return userRepository.existsUserByUsername(userName);
+    }
+
+    @Override
+    public boolean validateUniqueEmail(String email) {
+        log.info("[User Service] ==> Requesting email validation for email [{}]", email);
+        return userRepository.existsUserByEmail(email);
+    }
 }

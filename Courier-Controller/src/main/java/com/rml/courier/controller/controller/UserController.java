@@ -38,7 +38,28 @@ public class UserController {
 
         Map<String, Object> validatedResponse = new HashMap<>();
         validatedResponse.put("response", status);
+        String message = "Email does not exists";
+        if (status) {
+            message = "email exists";
+        }
+        validatedResponse.put("message", message);
+        log.info("[User Controller] ==> Returning user email validation response [{}]", validatedResponse.toString());
+        return ResponseEntity.ok(validatedResponse);
+    }
 
+    @GetMapping("/unique/{userName}")
+    public ResponseEntity<Map<String, Object>> validateUnioqueUser(@PathVariable("userName") String userName) {
+        log.info("[User Controller] ==> Requesting username validation for username [{}]", userName);
+        boolean status = userService.validateUniqueUser(userName);
+        Map<String, Object> validatedResponse = new HashMap<>();
+        validatedResponse.put("status", status);
+        String messege = "Username does not exist";
+        if (status) {
+            messege = "Username already exist";
+        }
+        validatedResponse.put("messege", messege);
+//        log.info("[User Controller] ==> Returning age group code validation status code [{}]", status);
+        return ResponseEntity.ok(validatedResponse);
     }
 
 }
